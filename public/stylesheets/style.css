@@ -67,14 +67,16 @@ a {
   margin-right: auto;
   width: 30%;
 }
-.resume_img {
+.resume_img,
+.contactme_img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 10%;
 }
 
-.resume_div {
+.resume_div,
+.contactme_div {
   text-align: center;
   padding: 50px;
   text-decoration: none;
