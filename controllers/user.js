@@ -1,3 +1,8 @@
+// File name: user.js
+// Studemt Name: Yuk Sing Cheung
+// Student ID: 301230209
+// Date: Oct 16,2022
+
 let express = require("express");
 let router = express.Router();
 let mongoose = require("mongoose");

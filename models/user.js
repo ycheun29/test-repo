@@ -1,3 +1,8 @@
+// File name: user.js
+// Studemt Name: Yuk Sing Cheung
+// Student ID: 301230209
+// Date: Oct 16,2022
+
 let mongoose = require("mongoose");
 let passportLocalMongoose = require("passport-local-mongoose");
 
@@ -9,11 +14,6 @@ let User = mongoose.Schema(
       trim: true,
       required: "username is needed",
     },
-    // password: {
-    //   type: String,
-    //   trim: true,
-    //   required: "password is needed",
-    // },
     email: {
       type: String,
       trim: true,
@@ -22,7 +22,7 @@ let User = mongoose.Schema(
     displayName: {
       type: String,
       trim: true,
-      required: "Display Name is needed",
+      required: "display name is needed",
     },
     created: {
       type: Date,
