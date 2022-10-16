@@ -145,7 +145,6 @@ h2 {
 input,
 textarea {
   width: 100%;
-  font-size: 24px;
 }
 
 .menu_icon {
@@ -161,11 +160,4 @@ textarea {
 
 table {
   width: 100%;
-}
-table,
-th,
-td {
-  text-align: center;
-  border: 1px solid;
-  border-collapse: collapse;
 }

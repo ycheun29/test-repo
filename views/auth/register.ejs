@@ -1,4 +1,4 @@
-<%- include ../partials/header.ejs %>
+<%- include ../partials/header.ejs %> <%- include ../partials/main_nav.ejs %>
 
 <main class="container">
   <!-- Message Area -->
@@ -7,8 +7,9 @@
   <% } %>
 
   <div class="row">
-    <div class="offset-md-4 col-md-4">
-      <h1>Please Register</h1>
+    <div class="offset-md-2 col-md-6">
+      <h1>Register Account</h1>
+      <br />
       <form method="POST" autocomplete="off">
         <fieldset class="form-group">
           <label for="username">Username: </label>
@@ -16,10 +17,8 @@
             type="text"
             class="form-control"
             name="username"
-            placeholder="Enter username"
             id="username"
             required
-            autofocus
           />
         </fieldset>
 
@@ -29,7 +28,6 @@
             type="password"
             class="form-control"
             name="password"
-            placeholder="Enter password"
             id="password"
             required
           />
@@ -41,7 +39,6 @@
             type="email"
             class="form-control"
             name="email"
-            placeholder="Enter Email Address"
             id="email"
             required
           />
@@ -53,21 +50,22 @@
             type="text"
             class="form-control"
             name="displayName"
-            placeholder="Enter Display Name"
             id="displayName"
             required
           />
         </fieldset>
 
         <fieldset class="form-group text-right">
-          <input type="submit" class="btn btn-success" value="Register" />
-          <a href="/">
-            <input type="button" class="btn btn-warning" value="Cancel" />
-          </a>
+          <button class="btn btn-primary" type="submit">
+            <i class="bi bi-bookmark-plus-fill"></i> Register
+          </button>
+          <a href="/login" class="btn btn-warning">
+            <i class="bi bi-trash-fill"></i> Cancel</a
+          >
         </fieldset>
       </form>
     </div>
   </div>
 </main>
 
-<%- include ../partials/footer.ejs %>
+<%- include ../partials/bottom_nav.ejs %> <%- include ../partials/footer.ejs %>

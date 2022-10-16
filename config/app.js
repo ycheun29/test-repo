@@ -35,7 +35,6 @@ mongoDB.once("open", () => {
 });
 
 var indexRouter = require("../routes/index");
-var userRouter = require("../routes/user");
 var contactRouter = require("../routes/contact");
 
 var app = express();
@@ -90,7 +89,6 @@ let strategy = new JWTStrategy(jwtOptions, (jwt_payload, done) => {
 passport.use(strategy);
 
 app.use("/", indexRouter);
-app.use("/user", userRouter);
 app.use("/contact-list", contactRouter);
 
 // catch 404 and forward to error handler
