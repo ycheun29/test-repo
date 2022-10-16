@@ -1,13 +1,8 @@
 <%- include ../partials/header.ejs %> <%- include ../partials/main_nav.ejs %>
 
-<main class="container">
-  <!-- Message Area -->
-  <% if(messages.length > 0) {%>
-  <div class="alert alert-danger"><%= messages %></div>
-  <% } %>
-
+<main class="content">
   <div class="row">
-    <div class="offset-md-2 col-md-6">
+    <div class="offset-md-2 col-md-5">
       <h1>Register Account</h1>
       <br />
       <form method="POST" autocomplete="off">
@@ -55,14 +50,23 @@
           />
         </fieldset>
 
-        <fieldset class="form-group text-right">
-          <button class="btn btn-primary" type="submit">
-            <i class="bi bi-bookmark-plus-fill"></i> Register
-          </button>
-          <a href="/login" class="btn btn-warning">
-            <i class="bi bi-trash-fill"></i> Cancel</a
-          >
-        </fieldset>
+        <div class="row">
+          <div class="col-md-6">
+            <button class="btn btn-success btn-lg" type="submit">
+              <i class="fa-solid fa-user-plus"></i> Register
+            </button>
+          </div>
+          <div class="col-md-6 text-right">
+            <a href="/login" class="btn btn-warning btn-lg">
+              <i class="fas fa-undo"></i> Cancel</a
+            >
+          </div>
+        </div>
+
+        <!-- Message Area -->
+        <% if(messages.length > 0) {%>
+        <div class="alert alert-danger"><%= messages %></div>
+        <% } %>
       </form>
     </div>
   </div>

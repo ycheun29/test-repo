@@ -3,10 +3,21 @@ Studemt Name: Yuk Sing Cheung
 Student ID: 301230209
 Date: Sep 30,2022  */
 
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color 0.15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 body {
-  background-color: #020711;
-  color: #ffffff;
-  margin: 0px 150px 0px 150px;
   font: 20px Inter, sans-serif;
 }
 
@@ -29,7 +40,6 @@ body {
 }
 
 .menuDiv {
-  background-color: #020711;
   float: left;
   width: 100%;
 }
@@ -50,10 +60,6 @@ footer {
   font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #ffffff;
-}
-
 .menuBar {
   list-style-type: none;
   margin: 0;
@@ -68,7 +74,6 @@ a {
   display: block;
   margin-left: 30px;
   padding: 10px;
-  background-color: #020711;
 }
 
 .about_img {
@@ -101,6 +106,9 @@ a {
 }
 
 h2 {
+  text-decoration: underline;
+}
+h1 {
   text-decoration: underline;
 }
 
@@ -158,6 +166,7 @@ textarea {
   padding: 50px 400px 50px 400px;
 }
 
-table {
-  width: 100%;
+i,
+a {
+  font-size: 20;
 }
