@@ -5,7 +5,7 @@ Student ID: 301230209
 Date: Oct 16,2022 
 -->
 
-<%- include ../partials/header.ejs %> <%- include ../partials/main_nav.ejs %>
+<%- include ../partials/header.ejs %> <%- include ../partials/main_bar.ejs %>
 
 <main class="content">
   <div class="row">
@@ -70,7 +70,6 @@ Date: Oct 16,2022
           </div>
         </div>
 
-        <!-- Message Area -->
         <% if(messages.length > 0) {%>
         <div class="alert alert-danger"><%= messages %></div>
         <% } %>
@@ -79,4 +78,4 @@ Date: Oct 16,2022
   </div>
 </main>
 
-<%- include ../partials/bottom_nav.ejs %> <%- include ../partials/footer.ejs %>
+<%- include ../partials/bottom_bar.ejs %> <%- include ../partials/footer.ejs %>

@@ -9,7 +9,6 @@ let mongoose = require("mongoose");
 
 let jwt = require("jsonwebtoken");
 
-// create a reference to the model
 let Contact = require("../models/contact");
 
 module.exports.displayContactList = (req, res, next) => {
@@ -23,7 +22,7 @@ module.exports.displayContactList = (req, res, next) => {
         displayName: req.user ? req.user.displayName : "",
       });
     }
-  });
+  }).sort({ name: 1 });
 };
 
 module.exports.displayAddPage = (req, res, next) => {
@@ -45,7 +44,6 @@ module.exports.processAddPage = (req, res, next) => {
       console.log(err);
       res.end(err);
     } else {
-      // refresh the contact list
       res.redirect("/contact-list");
     }
   });
@@ -84,7 +82,6 @@ module.exports.processEditPage = (req, res, next) => {
       console.log(err);
       res.end(err);
     } else {
-      // refresh the contact list
       res.redirect("/contact-list");
     }
   });
@@ -98,7 +95,6 @@ module.exports.performDelete = (req, res, next) => {
       console.log(err);
       res.end(err);
     } else {
-      // refresh the contact list
       res.redirect("/contact-list");
     }
   });

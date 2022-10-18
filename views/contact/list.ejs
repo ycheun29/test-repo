@@ -5,9 +5,8 @@ Student ID: 301230209
 Date: Oct 16,2022 
 -->
 
-<%- include ../partials/header.ejs %> <%- include ../partials/main_nav.ejs %>
+<%- include ../partials/header.ejs %> <%- include ../partials/main_bar.ejs %>
 
-<!-- Main Content -->
 <main class="content">
   <div class="row">
     <div>
@@ -15,17 +14,14 @@ Date: Oct 16,2022
       <br />
 
       <table class="table table-bordered table-dark table-striped table-hover">
-        <!-- Header Row-->
         <tr class="d-flex">
           <th class="text-center col-1">#</th>
-          <th class="text-center col-2">Name</th>
+          <th class="text-center col-2">Contact Name</th>
           <th class="text-center col-2">Contact Number</th>
           <th class="text-center col-2">Email</th>
           <th class="text-center col-1"></th>
           <th class="text-center col-1"></th>
         </tr>
-
-        <!-- Repeatable Template Row -->
 
         <% for(let count = 0; count < ContactList.length; count++) { %>
         <tr class="d-flex">
@@ -73,4 +69,4 @@ Date: Oct 16,2022
   </div>
 </main>
 
-<%- include ../partials/bottom_nav.ejs %> <%- include ../partials/footer.ejs %>
+<%- include ../partials/bottom_bar.ejs %> <%- include ../partials/footer.ejs %>
